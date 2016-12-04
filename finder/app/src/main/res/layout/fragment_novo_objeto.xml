@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="finder.ifsp.com.finder.fragment.NovoObjetoFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFoto"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textColorLink="?attr/actionMenuTextColor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_Descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:hint="Descrição"
+            android:textColorLink="?attr/actionMenuTextColor" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_Contato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contato"
+            android:textColorLink="?attr/actionMenuTextColor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btTirarFoto"
+        android:clickable="true"
+        android:background="@android:drawable/ic_menu_camera"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:layout_width="111dp"
+        android:layout_height="37dp"
+        android:text="Gravar"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btGravarObjeto"
+        android:clickable="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light" />
+
+
+</LinearLayout>
